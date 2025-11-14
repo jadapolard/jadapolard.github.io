@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="https://web.csulb.edu/~mopsteeg/engl418/structuredAuthoring/structuredAuthoring.css" ?> 
+<!-- controls document styling, use structuredAuthoring1.css as an alternative -->
+
+<!DOCTYPE document [
+    <!-- ROOT ELEMENT -->
+    <!ELEMENT document (title, introduction+, (section|topic)+)>
+
+    <!-- CONTAINER ELEMENTS -->
+    <!ELEMENT section (sectionTitle, introduction+, topic+)> <!-- sections are optional -->
+    <!ELEMENT topic (topicTitle, introduction+, (steps|list)*)>
+    <!ELEMENT steps (step+)>
+    <!ELEMENT list (listItem+)>
+
+    <!-- TEXT ELEMENTS -->
+    <!ELEMENT step (#PCDATA|action|note|warning|result)*> <!-- numbered list -->
+    <!ELEMENT listItem (#PCDATA|action|note|warning|result)*> <!-- bulleted list -->
+    <!ELEMENT title (#PCDATA)> 
+    <!ELEMENT sectionTitle (#PCDATA)> <!-- required only if you have sections -->
+    <!ELEMENT topicTitle (#PCDATA)>
+    <!ELEMENT introduction (#PCDATA|note|warning|list)*> <!-- you must include an introduction after every heading -->
+    <!ELEMENT result (#PCDATA|action)*> <!-- gives the user feedback, must be nested at the end of a step -->
+    <!ELEMENT note (#PCDATA|action)*> <!-- must be nested at the end of an intro or at the end of a step -->
+    <!ELEMENT warning (#PCDATA|action)*> <!-- must be nested at the end of an intro or at the end of a step -->
+    <!ELEMENT action (#PCDATA)> <!-- applies only to one or few words, not to whole sentences or steps -->
+]>
+
+<document>
+
+<title>Sewing a Handkerchief</title>
+
+<introduction>This tutorial shows you how to sew a handkerchief using a sewing machine. With just basic sewing supplies, this project takes about 30 minutes and is perfect for beginners.
+<note>Note: This tutorial assumes you have basic knowledge of sewing-machine operation, including threading the machine and adjusting stitch settings.</note>
+
+The following materials are essential:
+<list>
+<listItem>Sewing machine</listItem>
+
+<listItem>One yard of cotton fabric</listItem>
+
+<listItem>Thread (matching the fabric)</listItem>
+
+<listItem>Sewing pins</listItem>
+
+<listItem>Fabric scissors</listItem>
+
+<listItem>Ruler or measuring tape</listItem>
+
+<listItem>Fabric pencil or chalk</listItem>
+
+<listItem>Pin cushion or small container (to safely hold pins)</listItem>
+
+<listItem>Optional/Nice-to-Have: Iron or steamer (for pressing hems)</listItem>
+</list>
+</introduction>
+
+<topic>
+<topicTitle>Prepare the Fabric</topicTitle>
+<introduction>To make the handkerchief, we will begin by cutting the fabric into a square. Accuracy at this stage ensures the finished handkerchief looks neat and professional. This step should take approximately 10 minutes.</introduction>
+
+<steps>
+<step>Lay your chosen cotton fabric on a clean, level surface so it can lie completely even.</step>
+
+<step>Make sure the fabric is free of wrinkles or folds. If it is wrinkled, use a steamer or iron to smooth it out.</step>
+
+<step>Take a ruler and align it along one edge of the fabric to measure accurately.</step>
+
+<step>Using a fabric pencil or chalk, draw a straight vertical line 12 inches from the edge of the fabric.</step>
+
+<step>Repeat on the adjacent edge to draw a horizontal line 12 inches from that edge, forming a square outline.</step>
+
+<step>Double-check your measurements on all sides to ensure the square is even. Each side should be exactly 12 inches.</step>
+
+<step>Pick up your fabric scissors and position your fingers on the surface beneath the fabric for stability.</step>
+
+<step>Carefully cut along the outline of the square, trying to follow the lines as straight as possible.</step>
+
+<step>Inspect the cut square to ensure the edges are even and straight.</step>
+</steps>
+</topic>
+
+<topic>
+<topicTitle>Create Additional Squares Using a Template</topicTitle>
+<introduction>If you want to make multiple handkerchiefs, the first square can serve as a template to ensure all pieces are identical. This process saves time and fabric.</introduction>
+<steps>
+<step>Once your square is perfectly cut, place it on the remaining fabric to use as a guide for cutting additional pieces.</step>
+
+<step>Align the square so you maximize the use of the fabric and minimize waste.</step>
+
+<step>If needed, secure the square in place with sewing pins to prevent it from shifting while you trace around it.</step>
+
+<step>Using a fabric pencil or chalk, trace around the square onto the fabric.</step>
+
+<step>Cut carefully along the traced lines to create another square that matches your original perfectly.</step>
+
+<step>Repeat this process until you have cut all the squares you need from your fabric.</step>
+</steps>
+</topic>
+
+<topic>
+<topicTitle>Fold and Press the Edges</topicTitle>
+<introduction>Next, we will create a neat double-fold hem on each edge. Hems prevent fraying and give your handkerchief a professional finish. This should take about 5 to 10 minutes per square.</introduction>
+<steps>
+<step>Take one cut square of fabric and fold one edge up by &#188; inch.</step>
+
+<step>Fold up the same edge by &#188; inch, creating a double-fold hem.</step>
+
+<step>Hold the folded edge in place and secure it with sewing pins.
+ <warning>Sewing pins are sharp. Handle with care to avoid injury.</warning></step>
+
+<step>Repeat steps 1 through 3 for all edges of the square.</step>
+
+<step>Repeat the entire process for any remaining cut squares.</step>
+
+</steps>
+</topic>
+
+<topic>
+<topicTitle>Sew the Hem</topicTitle>
+<introduction>Now, we will sew the folded hems to secure them. This step ensures your handkerchief is durable and neatly finished. Sewing each hem takes about 10 to 15 minutes per square.</introduction>
+<steps>
+<step>Ensure your sewing machine is plugged in and properly threaded.
+<note>This guide assumes you know basic sewing-machine operations.</note></step>
+
+<step>
+Set the machine for a straight stitch:
+<listItem>Tension: ~4</listItem>
+<listItem>Stitch length: ~2.5</listItem>
+<listItem>Stitch width: 0</listItem>
+</step>
+
+<step>Take one pinned square and align the needle with the folded hem on one edge.</step>
+
+<step>Slowly sew along the hem, removing pins as you go. Remember to backstitch at the beginning to secure the thread.
+
+<note>Sewing needles are sharp. Keep unused needles and pins in a pin cushion or secure container to avoid injury.</note></step>
+
+<step>When you reach the end of the edge: Ensure the needle is in the fabric then lift the presser foot, rotate the fabric, and continue sewing the next edge.</step>
+
+<step>After completing the hem on all sides, backstitch to secure the thread. Lift the presser foot and needle, then cut the thread.</step>
+
+<step>Repeat this process for all remaining squares until all hems are stitched.</step>
+</steps>
+</topic>
+
+<topic>
+<topicTitle>Finish and Press Your Handkerchief</topicTitle>
+<introduction>Finally, we will complete the handkerchief by trimming threads and pressing the hems. This step ensures your handkerchief looks polished and professional.</introduction>
+<steps>
+<step>Trim any loose or extra threads from the hem.</step>
+
+<step>Optional: Lightly press the hem with an iron to ensure it lies flat and looks neat.</step>
+
+<step>Inspect all edges to make sure the stitching is secure and even.
+
+<result>Your handkerchief is now complete and ready for use!</result></step>
+</steps>
+</topic>
+
+</document>
